@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/lightGray">
+    <!--    상단(타이틀 부분) : 손안에 원가 -->
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:background="@drawable/linearlayout_round_green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="손안에 원가"
+            android:textSize="30sp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <!--  하단  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="80dp"
+        android:background="@drawable/linearlayout_round"
+        android:layout_marginHorizontal="10dp"
+        android:paddingRight="50dp"
+        android:paddingLeft="50dp"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/green"
+            android:text="가게 입장 준비중"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <EditText
+            android:singleLine="true"
+            android:maxLines="1"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="사장님 아이디"
+            android:drawableTint="@color/green"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:id="@+id/editID"
+            android:layout_marginTop="80dp"
+            android:backgroundTint="@color/green"
+            android:drawableStart="@drawable/ic_baseline_account_circle_24"
+            android:drawableLeft="@drawable/ic_baseline_account_circle_24"/>
+        <EditText
+            android:maxLines="1"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/title"
+            android:layout_marginTop="15dp"
+            android:textSize="15sp"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTint="@color/green"
+            android:backgroundTint="@color/green"
+            android:hint="사장님 비밀번호"
+            android:gravity="center"
+            android:id="@+id/editPassword"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:drawableStart="@drawable/ic_baseline_lock_24"/>
+        <!--  로그인 버튼 : 사용자 지정 버튼을 사용하기 위해 AppCompatButton 사용  -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonLogin"
+            android:background="@drawable/buttonshape"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:text="내가게로 입장" />
+        <!--  회원가입 버튼 : 사용자 지정 버튼을 사용하기 위해 AppCompatButton 사용  -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonRegister"
+            android:background="@drawable/buttonshape_lightgray"
+            android:textColor="@color/title"
+            android:layout_marginTop="15dp"
+            android:text="회원가입" />
+    </LinearLayout>
+</LinearLayout>

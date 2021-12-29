@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="322dp"
+    android:layout_height="400dp"
+    android:background="@drawable/linearlayout_round_gray"
+    android:orientation="vertical"
+    android:padding="15dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="거래처를 검색해 주세요"
+        android:textColor="@color/title"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/customListDlg_sentence"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="거래처명"
+            android:textColorHint="@color/gray"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="3dp"
+            android:textSize="15dp"
+            android:textColor="@color/title"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/button_find"
+            android:background="@drawable/buttonshape"
+            android:text="찾기" />
+    </LinearLayout>
+    <ListView
+        android:layout_marginVertical="5dp"
+        android:id="@+id/select_dialog_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/green"
+        android:dividerHeight="0.5dp" />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/btnCancle"
+            android:background="@drawable/buttonshape"
+            android:text="취소"
+            android:layout_margin="5dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/buttonshape"
+            android:text="추가"/>
+    </LinearLayout>
+</LinearLayout>

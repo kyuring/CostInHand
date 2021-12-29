@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/lightGray">
+    <!-- 상단(타이틀 부분) : 손안에 원가  -->
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:background="@drawable/linearlayout_round_green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="손안에 원가"
+            android:textSize="30sp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <!-- 하단 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="80dp"
+        android:background="@drawable/linearlayout_round"
+        android:layout_marginHorizontal="10dp"
+        android:paddingRight="50dp"
+        android:paddingLeft="50dp"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/green"
+            android:text="가게 개설"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <!-- 아이디 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:layout_marginTop="6dp"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="아이디 "
+                android:textColor="@color/green"/>
+            <EditText
+                android:maxLines="1"
+                android:layout_marginLeft="10dp"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/title"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="사장님 아이디"
+                android:drawableTint="@color/green"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:id="@+id/editID"
+                android:backgroundTint="@color/green" />
+        </LinearLayout>
+        <!-- 이메일 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:layout_marginTop="6dp"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="이메일"
+                android:textColor="@color/green"/>
+
+            <EditText
+                android:maxLines="1"
+                android:layout_marginLeft="10dp"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/title"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="example@example.com"
+                android:drawableTint="@color/green"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:id="@+id/editEmail"
+                android:backgroundTint="@color/green"/>
+        </LinearLayout>
+        <!--   비밀번호    -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginTop="6dp"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="비밀번호"
+                android:textColor="@color/green"/>
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <EditText
+                    android:maxLines="1"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/title"
+                    android:textSize="15sp"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/green"
+                    android:hint="비밀번호"
+                    android:gravity="center"
+                    android:id="@+id/editPassword"/>
+                <EditText
+                    android:maxLines="1"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/title"
+                    android:textSize="15sp"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/green"
+                    android:layout_marginTop="7dp"
+                    android:hint="비밀번호 확인"
+                    android:gravity="center"
+                    android:id="@+id/editPasswordCheck"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 가게이름 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:layout_marginTop="6dp"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="가게이름 "
+                android:textColor="@color/green"/>
+            <EditText
+                android:maxLines="1"
+                android:layout_marginLeft="10dp"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/title"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="가게이름"
+                android:drawableTint="@color/green"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:id="@+id/editStoreName"
+                android:backgroundTint="@color/green" />
+        </LinearLayout>
+        <!--  회원가입 버튼 : 사용자 지정 버튼을 사용하기 위해 AppCompatButton 사용  -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshape"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:id="@+id/button_register"
+            android:text="회원가입" />
+    </LinearLayout>
+</LinearLayout>
